@@ -1,0 +1,530 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*HEADER*/
+img#logo1{
+    display: block;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto
+}
+.menu{
+    padding: 12px;
+    border-bottom: 3px solid  #a1b391;
+    border-top: 3px solid  #a1b391
+    ;
+}
+nav#menu{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: black;
+}
+/*_____________________________*/
+
+/*MAIN INDEX*/
+.container-1{
+    display: flex;
+    flex-direction: row;
+    background-color:#536f5d;
+    height: 450px;
+    gap: 15px;/* le da espacio a las cajitas*/
+    align-items: center;
+    justify-content: center;
+}
+
+/*_____________________________*/
+
+/*-----------------------------FLIP CARD------------------------------*/
+.flip {
+    background-color: transparent;
+    width: 430px;
+    height: 280px;
+    border: 1px solid #dedd66;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  
+
+}
+.flip_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.flip:hover .flip_inner{
+    transform: rotateY(180deg);
+}
+.flip_front, .flip_back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+} 
+.flip_front{
+    background-color: #bbb;
+    color: black;
+
+}
+.flip_back{
+    background-color:#dedd66;
+    color: #26462e;
+    transform: rotateY(180deg);
+
+}
+.flip .flip_back a{
+    padding: 7px;
+    background: #3c3c3b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1px;
+    font-size: 20px;
+    transition: all 0.2s ease 0s;
+    line-height: 3;
+}
+.flip .flip_back a:hover {
+    background: #fff;
+    color: #3c3c3b;
+    text-shadow: 0 0 1px #3c3c3b;
+}
+.flip .flip_back h3,p{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    font-size: 23px;
+    margin-top: 20px;
+}
+
+/*-----------------------------------------------------------*/
+/*Cuerpo del index*/
+.medidaFondo1{
+    width: 1260px;
+    height: 400px; 
+    margin: 30px; 
+    background-color: rgb(60, 128, 122);
+}
+
+
+
+.parr3{
+    width: 100%;
+    height: 2.1%;
+    background-color: rgba(105, 110, 30, 0.712);
+    padding: 10px;
+}
+
+.parr3 p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:520;
+    line-height: 1.7;
+}
+
+img#instagram{
+    display: block;
+    width:3%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+
+.fondo3{
+    width: 90%;
+    height: 30%;
+    margin-left: 50px;
+    background-color: rgba(105, 110, 30, 0.712);
+    padding: 10px;
+}
+
+.fondo3 img{
+    display: block;
+    width:1000px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto
+
+}
+
+.fondo3 figure{
+    color: white;
+    font-weight:550;
+}
+
+.fondo4{
+    width: 90%;
+    height: 30%;
+    margin-left: 50px;
+    background-color: wh;
+    padding: 10px;
+    
+}
+
+/*Cuerpo de somos*/
+.medidaFondo2{
+    width: 100%;
+    height: 800px; 
+    background-color: rgba(117, 197, 63, 0.308);
+    padding: 10px;
+
+}
+
+
+/*Cuerpo de contactos*/
+.medidaFondo3{
+    width: 1100px;
+    height: 400px; 
+    background-color: #536f5d;
+    border: 5px solid  #dedd66;;
+    margin: 25px 0 0 110px;
+    border-style: double;
+
+}
+
+.medidaFondo4{
+    width: 900px;
+    height: 340px; 
+    background-color: rgb(255, 255, 255);
+    margin: 25px 0 0 110px;
+    border-radius: 20px;
+
+}
+
+.parrafoForm {
+    margin: 25px;
+    color: rgb(15, 80, 80);
+    font-size: 22.5px;
+    font-family: Tahoma;
+    font-style:normal;
+}
+
+.parrafoForm p{
+    margin: 20px;
+    color: rgb(15, 80, 80);
+    font-size: 30px;
+    font-family: Tahoma;
+    text-align: center;
+}
+
+
+.parrafoForm input{
+    margin: 20px;
+    border-radius: 4px;
+    color: rgb(15, 80, 80);
+    border-color:  rgb(117, 148, 148);   
+}
+
+.parrafoForm div {
+    text-align: center;
+    font-size: 22px;
+
+}
+
+.fondoImg1{
+    width: 400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    border: 2px dashed rgb(134, 120, 101);
+    background-image: url(../assent/imagen/boda.jpg);
+    background-image: url(../assent/imagen/lavanda.jpg);
+    display: block;
+    width: 30%;
+
+}
+
+
+
+
+
+
+/*Footer*/
+img#fin{
+    display: block;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto
+
+}
+footer#pie{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: rgb(23, 66, 63);
+}
+/*---------------------------------------------------------*/
+
+/*---------------------------------------------------------*/
+
+
+.medidasContenedora{
+    width: 100%;
+    height: 200px;  
+}
+
+.fondoImg{
+    background-color: aquamarine;
+    background-image: url(..//assent/imagen/fondo.jpg);
+    background-repeat: no-repeat; /*Esto implica que no se repita pero tiene otras opciones ya sea vertical u horizontal*/
+    background-position: center center ;
+/*position: acepta pixceles o right,left, top, down, center*/
+    background-size: cover; 
+}
+
+.fondoImg h1{
+    background-color: rgba(0, 0, 0, 0.411);
+    color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: 700px;
+    padding: 72px;
+
+}
+
+
+
+.espacio{
+    margin: 20px 0px;
+}
+/*-----------------EVENTO------------*/
+.contenedor1{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(105, 110, 30, 0.767);
+    height: 700px;
+    gap: 50px;/* le da espacio a las cajitas*/
+    align-items: start;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+}
+.caja{
+    width: 600px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid #dedd66;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+/*----------------- FIN EVENTO------------*/
+
+/*--------------Input imagen index-------*/
+.container-2{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(105, 110, 30, 0.767);
+    height: 900px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box1{
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin-top: 25px;
+    color: black;
+    text-align: center;
+    display: block;
+    width:1000px;
+    height: 700px;
+}
+.box2 p{
+    width: 900px;
+    height: 100px;
+    border: 5px solid #dedd66;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.box2_1 p{
+    width: 1000px;
+    height: 100px;
+    border: 5px solid #dedd66;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.parr4{
+    color:  rgba(105, 110, 30, 0.918);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:550;
+}
+
+/*-------------- FIN Input imagen index-------*/
+
+
+/*---------------INICIO Quienes somos-----------*/
+.container-3{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 1200px;
+    gap: 0px;
+    align-items:center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box3{
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    display: block;
+    width:450px;
+    height: 500px;
+
+}
+
+.box4{
+    background-color:rgba(105, 110, 30, 0.767);
+    height: 500px;
+    width: 750px;
+}
+.box4 h2{
+    margin: 20px;
+    color: white;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:550;
+    font-style: oblique;
+    margin-top: 40px;
+    border: 3px solid #dedd66;
+
+}
+.box4 ul{
+    margin: 45px;
+    color: white;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:550;
+    font-size: 20px;
+    line-height: 2;
+
+}
+
+
+/*---------------------------------------------------------*/
+.perfil{
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0  #26462e   ;
+    transition: 0.3s;
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    margin-left: 75px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+
+
+  }
+.perfil img{
+    margin: 20px;
+}
+  /* On mouse-over, add a deeper shadow */
+.perfil:hover1{
+    box-shadow: 0 8px 16px 0  #26462e;
+  }
+  
+  /* Add some padding inside the card container */
+.info {
+    padding: 2px 16px;
+  }
+/*---------------------------------------------------------*/
+.container-4{
+    display: flex;
+    flex-direction: row;
+    background-color:#536f5d;
+    height: 400px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*_____________________________*/
+
+/*-----------------------------FLIP CARD------------------------------*/
+.flip1 {
+    background-color: transparent;
+    width: 380px;
+    height: 280px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.flip_inner1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.flip1:hover .flip_inner1{
+    transform: rotateY(180deg);
+}
+.flip_front1, .flip_back1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+} 
+.flip_front1{
+    background-color: #a1b391;
+    color: black;
+    border: 3px solid #dedd66;
+
+}
+.flip_back1{
+    background-color:#dedd66;
+    color: #26462e;
+    transform: rotateY(180deg);
+}
+.flip1 .flip_back1 a{
+    padding: 7px;
+    background: #3c3c3b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1px;
+    font-size: 20px;
+    transition: all 0.2s ease 0s;
+    line-height: 3;
+}
+.flip1 .flip_back1 a:hover {
+    background: #fff;
+    color: #3c3c3b;
+    text-shadow: 0 0 1px #3c3c3b;
+}
+.flip1 .flip_back1 h3,p{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+    font-size: 23px;
+    margin-top: 20px;
+}
+
+/*-----------------FIN Quienes somos-----------*/
+
+
+
+
